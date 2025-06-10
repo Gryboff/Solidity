@@ -1,6 +1,6 @@
 {
 	"compiler": {
-		"version": "0.8.30+commit.73712a01"
+		"version": "0.8.28+commit.7893614a"
 	},
 	"language": "Solidity",
 	"output": {
@@ -61,6 +61,25 @@
 				"type": "function"
 			},
 			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"name": "nameToFavoriteNumber",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
 				"inputs": [],
 				"name": "retrieve",
 				"outputs": [
@@ -89,7 +108,7 @@
 		"compilationTarget": {
 			"Storage.sol": "Storage"
 		},
-		"evmVersion": "prague",
+		"evmVersion": "cancun",
 		"libraries": {},
 		"metadata": {
 			"bytecodeHash": "ipfs"
@@ -102,11 +121,11 @@
 	},
 	"sources": {
 		"Storage.sol": {
-			"keccak256": "0x3680f12f6e7ca03e09c1d349774d0f0fdd55300df5437ae134f01d3edc468221",
+			"keccak256": "0xe376f93c8a5a9541be0430b962ff22d7781e13fb38f06b2d9c45f27e32b4fdc6",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://e9ee260f2429abb3bc0d3bf2be1e62254e05cb20d518cd1959e3d51806e0d6c1",
-				"dweb:/ipfs/QmWLozCeiBqCfYqdYfCvUP7pkS2TUVwgQWDn81o8zT2Rpm"
+				"bzz-raw://5fc5684be99e56976b97045a74146f8395128590cf9be0aa1727ae7331fa21d5",
+				"dweb:/ipfs/QmY5cmWtB6WDm8QD9WmzKUv7PThdKXbzmJiA5TeuUKYLnB"
 			]
 		}
 	},

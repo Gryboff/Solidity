@@ -11,7 +11,10 @@ contract Storage{
         string name;
     }
 
+    //dynamic array
     Person[] public listOfPeople;
+
+    mapping (string => uint256) public nameToFavoriteNumber;
 
     //Person public myFriend = Person({favoriteNumber: 1, name: 'Pet'});
 
@@ -27,6 +30,7 @@ contract Storage{
        
         //Person memory newPerson = Person(_favoriteNumber, _name);
         listOfPeople.push(Person(_favoriteNumber, _name));
+        nameToFavoriteNumber[_name] = _favoriteNumber;
     }
 
 }
