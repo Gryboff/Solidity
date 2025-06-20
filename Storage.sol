@@ -1,23 +1,35 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.19;
 
-    
+contract SimpleStorage{
 
-contract FundNe{
+    uint256 public myFavoriteNumber;
 
-    uint256 public  minimumUSD = 5;
-    
-    function Fund() public payable {
+    Person[] public listOfPeople;
+
+    mapping (string => uint256) public nameToFavoriteNumber;
+
+    struct Person{
+        uint256 favoriteNumber;
+        string name;
+    }
+
         
+    function Stor(uint256 _favoriteNumber) public {
+        myFavoriteNumber = _favoriteNumber;
     }
 
-    // function Withdrow()public {
-
-    // }
-
-    function getPrise() public {
-        //address 0x694AA1769357215DE4FAC081bf1f309aDC325306
+    function retrieve() public view returns (uint256) {
+        
+        return myFavoriteNumber;
     }
 
-    function getConversionRate() public {}
+    function addPerson(string memory _name, uint256 _favoriteNumber) public {
+        
+        listOfPeople.push(Person(_favoriteNumber, _name));
+
+        nameToFavoriteNumber[_name] = _favoriteNumber;
+    }
+
+    
 }
